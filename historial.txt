@@ -1,0 +1,177 @@
+    1  ls
+    2  pwd
+    3  cd /Documents
+    4  cd Documents
+    5  mkdir primero
+    6  ls
+    7  ls -l
+    8  cd /Documents/primero
+    9  cd Documents
+   10  ls -l
+   11  cd /primero
+   12  cd primero
+   13  git init -b
+   14  git init
+   15  touch texto1.txt
+   16  nano texto1.txt
+   17  echo "Hola esto es EDD" > texto1.txt
+   18  echo "Hola esto es EDD 2" >> texto1.txt
+   19  git status
+   20  gid add
+   21  git add texto1.txt
+   22  git commit -m "Primer commit. Añadimos el archivo texto1.txt"
+   23  git status
+   24  nano texto1.txt
+   25  cat texto1.txt
+   26  nano texto1..txt
+   27  nano texto1.txt
+   28  git add texto1.txt
+   29  git status
+   30  git commit -m "Añadimos última linea y autor"
+   31  echo "Primera linea de texto2.txt" > texto2.txt
+   32  git add tetxto2.txt
+   33  git add texto2.txt
+   34  git commit -m "Añadir archivo texto2.txt"
+   35  git log --oneline
+   36  git add texto2.txt
+   37  git diff
+   38  git diff HEAD
+   39  nano texto2.txt
+   40  git add texto2.txt
+   41  git diff
+   42  git diff HEAD
+   43  git diff HEAD~2 HEAD
+   44  git log --oneline
+   45  git checkout texto2.txt
+   46  nano texto2.txt
+   47  cat texto2.txt
+   48  git checkout texto2.txt
+   49  cat texto2.txt
+   50  nano texto1.txt
+   51  nano texto2.txt
+   52  cat texto*
+   53  git checkout .
+   54  git reset
+   55  git status
+   56  cat texto2.txt
+   57  git add texto2.txt
+   58  git status
+   59  git reset
+   60  git status
+   61  git add texto2.txt
+   62  git reset HEAD texto2.txt
+   63  git add texto2.txt texto2.txt
+   64  git commit -m "Añadir texto2.txt"
+   65  cat texto2.txt
+   66  git rm texto2.txt
+   67  ls
+   68  git status
+   69  git reset HEAD texto2.txt
+   70  git status
+   71  ls
+   72  git rm texto1.txt
+   73  git status
+   74  git reset HEAD texto1.txt
+   75  ls
+   76  git status
+   77  git add texto*
+   78  git status
+   79  git commit -m "Borra texto1.txt y texto2.txt"
+   80  git log --oneline
+   81  git revert 0585765
+   82  ls
+   83  git revert HEAD
+   84  git status
+   85  ls
+   86  cat texto*
+   87  git rm texto*
+   88  git commit -m "Borrar ambos archivos otra vez"
+   89  git log --oneline
+   90  git revert 3f70808
+   91  touch texto1.txt texto2.txt
+   92  git revert --continue
+   93  git add texto*
+   94  git revert --continue
+   95  cat texto*
+   96  vim
+   97  mkdir prueba_2025_03_19
+   98  cd prueba_2025_03_19/
+   99  echo "Primera línea del texto > texto1.txt
+
+  100  cat texto1.txt
+  101  echo "Primera línea del texto >> texto1.txt
+
+  102  touch texto1.txt
+  103  echo "Primera línea del texto >> texto1.txt
+
+  104  echo "Primera línea del texto" > texto1.txt
+  105  git init
+  106  git add .
+  107  git commit -m "Primer commit. Se añade texto1.txt"
+  108  git log --oneline
+  109  nano texto1.txt 
+  110  cat texto1.txt 
+  111  ls
+  112  ls -l
+  113  git diff
+  114  git status
+  115  git add texto1.txt 
+  116  git status
+  117  git commit -m "Se añade una segunda línea a texto1.txt"
+  118  git log --oneline 
+  119  git log
+  120  rm .
+  121  rm texto1.txt 
+  122  git status
+  123  git checkout texto1.txt
+  124  cat texto1.txt
+  125  git rm texto1.txt 
+  126  git status
+  127  git restore
+  128  git restore texto1.txt
+  129  echo texto1.txt
+  130  touch texto1.txt
+  131  git restore texto1.txt
+  132  git restore --staged texto1.txt
+  133  git restore .
+  134  cat texto1.txt 
+  135  history
+  136  history >> historial.txt
+  137  echo "Tercera línea ya" >> texto1.txt
+  138  cat texto1.txt 
+  139  git add texto1.txt 
+  140  git status
+  141  git checkout texto1.txt
+  142  cat texto1.txt 
+  143  echo "Otra línea" >> texto1.txt
+  144  git status
+  145  git restore
+  146  git restore texto1.txt
+  147  git status
+  148  git add texto1.txt 
+  149  $ git commit -m "Añadir una tercera línea"
+  150  git commit -m "Añadir una tercera línea a texto1.txt"
+  151  git log --oneline 
+  152  git revert HEAD
+  153  git log --oneline 
+  154  git revert HEAD
+  155  cat texto1.txt 
+  156  git log --oneline 
+  157  git revert HEAD~3
+  158  git revert --abort
+  159  git log --oneline 
+  160  git revert e6775eb
+  161  git log --oneline 
+  162  cat texto1.txt 
+  163  git revert 69cd574
+  164  git status
+  165  git rm texto1.txt 
+  166  git status
+  167  rm historial.txt 
+  168  git status
+  169  git revert --continue
+  170  git log --oneline 
+  171  git revert HEAD...HEAD~3 --no-edit
+  172  cat texto1.txt 
+  173  git log --oneline 
+  174  history > historial.txt
